@@ -28,13 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.fivestone_start_btn = new System.Windows.Forms.Button();
+            this.aimtraining_btn = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // fivestone_start_btn
+            // 
+            this.fivestone_start_btn.Location = new System.Drawing.Point(65, 79);
+            this.fivestone_start_btn.Name = "fivestone_start_btn";
+            this.fivestone_start_btn.Size = new System.Drawing.Size(75, 23);
+            this.fivestone_start_btn.TabIndex = 0;
+            this.fivestone_start_btn.Text = "오목";
+            this.fivestone_start_btn.UseVisualStyleBackColor = true;
+            // 
+            // aimtraining_btn
+            // 
+            this.aimtraining_btn.Location = new System.Drawing.Point(156, 79);
+            this.aimtraining_btn.Name = "aimtraining_btn";
+            this.aimtraining_btn.Size = new System.Drawing.Size(75, 23);
+            this.aimtraining_btn.TabIndex = 1;
+            this.aimtraining_btn.Text = "에임연습";
+            this.aimtraining_btn.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(65, 118);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(156, 118);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("안동엄마까투리", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(49, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 36);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "아케이드 게임";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(12, 210);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(278, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "==하고싶은 게임을 선택하세요!==";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(295, 316);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.aimtraining_btn);
+            this.Controls.Add(this.fivestone_start_btn);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button fivestone_start_btn;
+        private System.Windows.Forms.Button aimtraining_btn;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
