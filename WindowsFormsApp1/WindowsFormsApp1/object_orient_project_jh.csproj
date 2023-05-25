@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aimtrainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aimtrainForm.Designer.cs">
+      <DependentUpon>aimtrainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fivestoneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fivestoneForm.Designer.cs">
+      <DependentUpon>fivestoneForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -44,6 +44,7 @@
             this.fivestone_start_btn.TabIndex = 0;
             this.fivestone_start_btn.Text = "오목";
             this.fivestone_start_btn.UseVisualStyleBackColor = true;
+            this.fivestone_start_btn.Click += new System.EventHandler(this.fivestone_start_btn_Click);
             // 
             // aimtraining_btn
             // 
@@ -53,6 +54,7 @@
             this.aimtraining_btn.TabIndex = 1;
             this.aimtraining_btn.Text = "에임연습";
             this.aimtraining_btn.UseVisualStyleBackColor = true;
+            this.aimtraining_btn.Click += new System.EventHandler(this.aimtraining_btn_Click);
             // 
             // button3
             // 

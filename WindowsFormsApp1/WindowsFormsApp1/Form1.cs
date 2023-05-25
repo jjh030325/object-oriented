@@ -16,5 +16,17 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void fivestone_start_btn_Click(object sender, EventArgs e)
+        {
+            fivestoneForm form = new fivestoneForm();
+            form.ShowDialog();
+        }
+
+        private void aimtraining_btn_Click(object sender, EventArgs e)
+        {
+            aimtrainForm form = new aimtrainForm();
+            form.ShowDialog();
+        }
     }
 }
