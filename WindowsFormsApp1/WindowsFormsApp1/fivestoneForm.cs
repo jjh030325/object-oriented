@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
             wBrush = new SolidBrush(Color.White);
             bBrush = new SolidBrush(Color.Black);
         }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             drawfivestonemap();
@@ -77,28 +78,126 @@ namespace WindowsFormsApp1
 
             if (turn == false)    // 검은 돌
             {
-                g.FillEllipse(bBrush, r);
                 fivestonemap[x, y] = STONE.black;
+                if (checksixmok(x, y)==true)
+                {
+                    fivestonemap[x, y] = STONE.none;
+                }
+                else if(check33(x, y) == true)
+                {
+                    fivestonemap[x, y] = STONE.none;
+                }
+                else if(check44(x, y) == true)
+                {
+                    fivestonemap[x, y] = STONE.none;
+                }
+                else
+                {
+                    g.FillEllipse(bBrush, r);
+                    fivestonemap[x, y] = STONE.black;
+                    //color_show.Text = "White";
+                }
             }
             else  // 흰돌
             {
                 g.FillEllipse(wBrush, r);
                 fivestonemap[x, y] = STONE.white;
+                //color_show.Text = "Black";
             }
             turn = !turn;  // 돌 색깔을 토글
             checkOmok(x, y);  // 오목이 만들어졌는지 체크하는 함수
         }
+        private bool checksixmok(int x, int y)
+        {
+            if (checkLR(x, y) >= 6)
+            {
+                MessageBox.Show("흑은 6목을 둘 수 없습니다.");
+                return true;
+            }
+            else if (checkUD(x, y) >= 6)
+            {
+                MessageBox.Show("흑은 6목을 둘 수 없습니다.");
+                return true;
+            }
+            else if (checkSLASH(x, y) >= 6)
+            {
+                MessageBox.Show("흑은 6목을 둘 수 없습니다.");
+                return true;
+            }
+            else if (checkBACKSLASH(x, y) >= 6)
+            {
+                MessageBox.Show("흑은 6목을 둘 수 없습니다.");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         private void checkOmok(int x, int y)
         {
-            if (checkLR(x, y) >= 5)
+            if (checkLR(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
                 MessageBox.Show(fivestonemap[x, y] + " wins");
-            if (checkUD(x, y) >= 5)
+            if (checkUD(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
                 MessageBox.Show(fivestonemap[x, y] + " wins");
-            if (checkSLASH(x, y) >= 5)
+            if (checkSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
                 MessageBox.Show(fivestonemap[x, y] + " wins");
-            if (checkBACKSLASH(x, y) >= 5)
+            if (checkBACKSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
                 MessageBox.Show(fivestonemap[x, y] + " wins");
         }
+        private bool check33(int x, int y)
+        {
+            int check = 0;
+            if (checkLR(x, y) == 3 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (checkUD(x, y) == 3 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (checkSLASH(x, y) == 3 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (checkBACKSLASH(x, y) == 3 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if(check>=2)
+            {
+                MessageBox.Show("흑은 33수를 둘 수 없습니다.");
+                return true;
+            }
+            return false;
+        }
+        private bool check44(int x, int y)
+        {
+            int check = 0;
+            if (checkLR(x, y) == 4 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (checkUD(x, y) == 4 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (checkSLASH(x, y) == 4 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (checkBACKSLASH(x, y) == 4 && fivestonemap[x, y] == STONE.black)
+            {
+                check++;
+            }
+            if (check >= 2)
+            {
+                MessageBox.Show("흑은 44수를 둘 수 없습니다.");
+                return true;
+            }
+            return false;
+        }
+
         private int checkLR(int x, int y)
         {
             int cnt = 1;
@@ -159,8 +258,6 @@ namespace WindowsFormsApp1
                     break;
             return cnt;
         }
-
-        
 
         private void fivestoneForm_Load(object sender, EventArgs e)
         {
