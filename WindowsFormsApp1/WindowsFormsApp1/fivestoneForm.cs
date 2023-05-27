@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
         private int stonesize = 18;
         private int gridsize = 20;
         private int dotsize = 8;
+        private int endcheck = 0;
         private Pen pen;
         private Brush wBrush, bBrush;
 
@@ -72,41 +73,45 @@ namespace WindowsFormsApp1
             if (fivestonemap[x, y] == STONE.black || fivestonemap[x, y] == STONE.white)
                 return;
 
-            // 돌 그리기
-            Rectangle r = new Rectangle(10 + gridsize * x - stonesize / 2,
-                 10 + gridsize * y - stonesize / 2, stonesize, stonesize);
+            if(endcheck == 0)
+            {
+                // 돌 그리기
+                Rectangle r = new Rectangle(10 + gridsize * x - stonesize / 2,
+                     10 + gridsize * y - stonesize / 2, stonesize, stonesize);
 
-            if (turn == false)    // 검은 돌
-            {
-                fivestonemap[x, y] = STONE.black;
-                if (checksixmok(x, y)==true)
+                if (turn == false)    // 검은 돌
                 {
-                    fivestonemap[x, y] = STONE.none;
-                    turn = !turn;
-                }
-                else if(check33(x, y) == true)
-                {
-                    fivestonemap[x, y] = STONE.none;
-                    turn = !turn;
-                }
-                else if(check44(x, y) == true)
-                {
-                    fivestonemap[x, y] = STONE.none;
-                    turn = !turn;
-                }
-                else
-                {
-                    g.FillEllipse(bBrush, r);
                     fivestonemap[x, y] = STONE.black;
+                    if (checksixmok(x, y) == true)
+                    {
+                        fivestonemap[x, y] = STONE.none;
+                        turn = !turn;
+                    }
+                    else if (check33(x, y) == true)
+                    {
+                        fivestonemap[x, y] = STONE.none;
+                        turn = !turn;
+                    }
+                    else if (check44(x, y) == true)
+                    {
+                        fivestonemap[x, y] = STONE.none;
+                        turn = !turn;
+                    }
+                    else
+                    {
+                        g.FillEllipse(bBrush, r);
+                        fivestonemap[x, y] = STONE.black;
+                    }
                 }
+                else  // 흰돌
+                {
+                    g.FillEllipse(wBrush, r);
+                    fivestonemap[x, y] = STONE.white;
+                }
+                turn = !turn;  // 돌 색깔을 토글
+                checkOmok(x, y);  // 오목이 만들어졌는지 체크하는 함수
             }
-            else  // 흰돌
-            {
-                g.FillEllipse(wBrush, r);
-                fivestonemap[x, y] = STONE.white;
-            }
-            turn = !turn;  // 돌 색깔을 토글
-            checkOmok(x, y);  // 오목이 만들어졌는지 체크하는 함수
+            
         }
         private bool checksixmok(int x, int y)
         {
@@ -138,13 +143,25 @@ namespace WindowsFormsApp1
         private void checkOmok(int x, int y)
         {
             if (checkLR(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+            {
                 MessageBox.Show(fivestonemap[x, y] + " wins");
-            if (checkUD(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+                endcheck = 1;
+            }
+            else if (checkUD(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+            {
                 MessageBox.Show(fivestonemap[x, y] + " wins");
-            if (checkSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+                endcheck = 1;
+            }
+            else if (checkSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+            {
                 MessageBox.Show(fivestonemap[x, y] + " wins");
-            if (checkBACKSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+                endcheck = 1;
+            }
+            else if (checkBACKSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
+            {
                 MessageBox.Show(fivestonemap[x, y] + " wins");
+                endcheck = 1;
+            }
         }
         private bool check33(int x, int y)
         {
