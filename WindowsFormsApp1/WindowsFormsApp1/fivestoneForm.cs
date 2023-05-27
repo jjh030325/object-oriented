@@ -82,27 +82,28 @@ namespace WindowsFormsApp1
                 if (checksixmok(x, y)==true)
                 {
                     fivestonemap[x, y] = STONE.none;
+                    turn = !turn;
                 }
                 else if(check33(x, y) == true)
                 {
                     fivestonemap[x, y] = STONE.none;
+                    turn = !turn;
                 }
                 else if(check44(x, y) == true)
                 {
                     fivestonemap[x, y] = STONE.none;
+                    turn = !turn;
                 }
                 else
                 {
                     g.FillEllipse(bBrush, r);
                     fivestonemap[x, y] = STONE.black;
-                    //color_show.Text = "White";
                 }
             }
             else  // 흰돌
             {
                 g.FillEllipse(wBrush, r);
                 fivestonemap[x, y] = STONE.white;
-                //color_show.Text = "Black";
             }
             turn = !turn;  // 돌 색깔을 토글
             checkOmok(x, y);  // 오목이 만들어졌는지 체크하는 함수

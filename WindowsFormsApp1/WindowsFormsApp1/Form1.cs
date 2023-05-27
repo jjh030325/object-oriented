@@ -28,5 +28,11 @@ namespace WindowsFormsApp1
             aimtrainForm form = new aimtrainForm();
             form.ShowDialog();
         }
+
+        private void rucktest_btn_Click(object sender, EventArgs e)
+        {
+            rucktestForm form = new rucktestForm();
+            form.ShowDialog();
+        }
     }
 }
