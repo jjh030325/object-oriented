@@ -168,79 +168,25 @@ namespace WindowsFormsApp1
             int check = 0;
             if (checkLR(x, y) == 3 && fivestonemap[x, y] == STONE.black)
             {
-                if (!isBlockedLR(x, y)) // 열린 3이 막혀있지 않은 경우에만 카운트
-                    check++;
+                check++;
             }
             if (checkUD(x, y) == 3 && fivestonemap[x, y] == STONE.black)
             {
-                if (!isBlockedUD(x, y)) // 열린 3이 막혀있지 않은 경우에만 카운트
-                    check++;
+                check++;
             }
             if (checkSLASH(x, y) == 3 && fivestonemap[x, y] == STONE.black)
             {
-                if (!isBlockedSLASH(x, y)) // 열린 3이 막혀있지 않은 경우에만 카운트
-                    check++;
+                check++;
             }
             if (checkBACKSLASH(x, y) == 3 && fivestonemap[x, y] == STONE.black)
             {
-                if (!isBlockedBACKSLASH(x, y)) // 열린 3이 막혀있지 않은 경우에만 카운트
-                    check++;
+                check++;
             }
             if (check >= 2)
             {
                 MessageBox.Show("흑은 33수를 둘 수 없습니다.");
                 return true;
             }
-            return false;
-        }
-
-        private bool isBlockedLR(int x, int y)
-        {
-            // 왼쪽 확인
-            if (x - 1 >= 0 && fivestonemap[x - 1, y] != STONE.none)
-                return true;
-
-            // 오른쪽 확인
-            if (x + 3 < 19 && fivestonemap[x + 3, y] != STONE.none)
-                return true;
-
-            return false;
-        }
-
-        private bool isBlockedUD(int x, int y)
-        {
-            // 위쪽 확인
-            if (y - 1 >= 0 && fivestonemap[x, y - 1] != STONE.none)
-                return true;
-
-            // 아래쪽 확인
-            if (y + 3 < 19 && fivestonemap[x, y + 3] != STONE.none)
-                return true;
-
-            return false;
-        }
-        private bool isBlockedSLASH(int x, int y)
-        {
-            // 왼쪽 위 확인
-            if (x - 1 >= 0 && y - 1 >= 0 && fivestonemap[x - 1, y - 1] != STONE.none)
-                return true;
-
-            // 오른쪽 아래 확인
-            if (x + 3 < 19 && y + 3 < 19 && fivestonemap[x + 3, y + 3] != STONE.none)
-                return true;
-
-            return false;
-        }
-        private bool isBlockedBACKSLASH(int x, int y)
-        {
-            // 왼쪽 아래 확인
-            if (x - 1 >= 0 && y + 1 < 19 && fivestonemap[x - 1, y + 1] != STONE.none)
-                return true;
-
-            // 오른쪽 위 확인
-            if (x + 3 < 19 && y - 3 >= 0 && fivestonemap[x + 3, y - 3] != STONE.none)
-                return true;
-
             return false;
         }
 
