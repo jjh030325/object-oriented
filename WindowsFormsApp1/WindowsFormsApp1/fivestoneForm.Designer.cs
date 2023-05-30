@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(437, 553);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "fivestoneForm";
             this.Text = "fivestoneForm";
             this.Load += new System.EventHandler(this.fivestoneForm_Load);

@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
             pen = new Pen(Color.Black);
             wBrush = new SolidBrush(Color.White);
             bBrush = new SolidBrush(Color.Black);
+            this.Text = "흑의 턴";
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -101,12 +102,14 @@ namespace WindowsFormsApp1
                     {
                         g.FillEllipse(bBrush, r);
                         fivestonemap[x, y] = STONE.black;
+                        this.Text = "백의 턴";
                     }
                 }
                 else  // 흰돌
                 {
                     g.FillEllipse(wBrush, r);
                     fivestonemap[x, y] = STONE.white;
+                    this.Text = "흑의 턴";
                 }
                 turn = !turn;  // 돌 색깔을 토글
                 checkOmok(x, y);  // 오목이 만들어졌는지 체크하는 함수
