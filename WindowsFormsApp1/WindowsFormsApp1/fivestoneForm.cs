@@ -135,6 +135,7 @@ namespace WindowsFormsApp1
                         fivestonemap[x, y] = STONE.black;
                         this.Text = "백의 턴";
                         turn_txt.Text = "백의 턴";
+                        turn_txt.ForeColor = Color.White;
                         elapsedTime = 0;
                         timer_label.Text = "timer : " + counttime.ToString(); // 경과 시간 표시
                         play_timer.Start();
@@ -146,6 +147,7 @@ namespace WindowsFormsApp1
                     fivestonemap[x, y] = STONE.white;
                     this.Text = "흑의 턴";
                     turn_txt.Text = "흑의 턴";
+                    turn_txt.ForeColor = Color.Black;
                     elapsedTime = 0;
                     timer_label.Text = "timer : " + counttime.ToString(); // 경과 시간 표시
                     play_timer.Start();
