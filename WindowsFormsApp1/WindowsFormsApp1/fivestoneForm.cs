@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,10 +20,14 @@ namespace WindowsFormsApp1
         private int endcheck = 0;
         private Pen pen;
         private Brush wBrush, bBrush;
+        private int counttime = 30;
 
         private bool turn = false; // false: 흑돌, true: 백돌
         enum STONE { none, black, white };
         STONE[,] fivestonemap = new STONE[19, 19];
+
+        private Timer play_timer;     //타이머 추가
+        private int elapsedTime; //경과시간
 
         public fivestoneForm()
         {
@@ -36,8 +41,33 @@ namespace WindowsFormsApp1
             {
                 drawfivestonemap();
             };
+            // 타이머 초기화
+            play_timer = new Timer();
+            play_timer.Interval = 1000; // 1초마다 타이머 이벤트 발생
+            play_timer.Tick += Timer_Tick;
+            elapsedTime = 0;
         }
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            elapsedTime++; // 경과 시간 증가
+            timer_label.Text = "timer : " + (counttime - elapsedTime).ToString(); // 경과 시간 표시
 
+            if (counttime - elapsedTime <= 0)
+            {
+                play_timer.Stop(); // 타이머 멈춤
+
+                if (turn == true)
+                {
+                    MessageBox.Show("black " + " wins");
+                    endcheck = 1;
+                }
+                else
+                {
+                    MessageBox.Show("white " + " wins");
+                    endcheck = 1;
+                }
+            }
+        }
         private void drawfivestonemap()
         {
             Graphics g = panel1.CreateGraphics();
@@ -104,6 +134,10 @@ namespace WindowsFormsApp1
                         g.FillEllipse(bBrush, r);
                         fivestonemap[x, y] = STONE.black;
                         this.Text = "백의 턴";
+                        turn_txt.Text = "백의 턴";
+                        elapsedTime = 0;
+                        timer_label.Text = "timer : " + counttime.ToString(); // 경과 시간 표시
+                        play_timer.Start();
                     }
                 }
                 else  // 흰돌
@@ -111,6 +145,10 @@ namespace WindowsFormsApp1
                     g.FillEllipse(wBrush, r);
                     fivestonemap[x, y] = STONE.white;
                     this.Text = "흑의 턴";
+                    turn_txt.Text = "흑의 턴";
+                    elapsedTime = 0;
+                    timer_label.Text = "timer : " + counttime.ToString(); // 경과 시간 표시
+                    play_timer.Start();
                 }
                 turn = !turn;  // 돌 색깔을 토글
                 checkOmok(x, y);  // 오목이 만들어졌는지 체크하는 함수

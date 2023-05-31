@@ -9,7 +9,6 @@ C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\Wind
 C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fivestoneForm.resources
 C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.rucktestForm.resources
-C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csprojAssemblyReference.cache
 C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\object-oriented\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\object-oriented\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\object-oriented\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
@@ -36,3 +35,5 @@ C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsForms
 C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.AssemblyReference.cache
+C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.SuggestedBindingRedirects.cache
