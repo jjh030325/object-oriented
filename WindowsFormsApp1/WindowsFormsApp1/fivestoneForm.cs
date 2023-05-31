@@ -31,12 +31,13 @@ namespace WindowsFormsApp1
             wBrush = new SolidBrush(Color.White);
             bBrush = new SolidBrush(Color.Black);
             this.Text = "흑의 턴";
+
+            panel1.Paint += (s, e) =>
+            {
+                drawfivestonemap();
+            };
         }
 
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            drawfivestonemap();
-        }
         private void drawfivestonemap()
         {
             Graphics g = panel1.CreateGraphics();
