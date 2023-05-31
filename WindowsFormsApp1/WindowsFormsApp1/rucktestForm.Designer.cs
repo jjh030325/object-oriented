@@ -52,11 +52,11 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(182, 457);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Font = new System.Drawing.Font("배달의민족 주아", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(156, 450);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 28);
+            this.button1.Size = new System.Drawing.Size(153, 49);
             this.button1.TabIndex = 1;
             this.button1.Text = "뽑기";
             this.button1.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.Controls.Add(this.probability);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.title);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "rucktestForm";
             this.Text = "rucktestForm";
             this.Load += new System.EventHandler(this.rucktestForm_Load);
