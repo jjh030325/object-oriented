@@ -188,21 +188,61 @@ namespace WindowsFormsApp1
         {
             if (checkLR(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
             {
+                play_timer.Stop(); // 타이머 멈춤
+                turn_txt.Text = fivestonemap[x, y] + " wins";
+                if (turn == true)
+                {
+                    turn_txt.ForeColor = Color.Black;
+                }
+                else
+                {
+                    turn_txt.ForeColor = Color.White;
+                }
                 MessageBox.Show(fivestonemap[x, y] + " wins");
                 endcheck = 1;
             }
             else if (checkUD(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
             {
+                play_timer.Stop(); // 타이머 멈춤
+                turn_txt.Text = fivestonemap[x, y] + " wins";
+                if (turn == true)
+                {
+                    turn_txt.ForeColor = Color.Black;
+                }
+                else
+                {
+                    turn_txt.ForeColor = Color.White;
+                }
                 MessageBox.Show(fivestonemap[x, y] + " wins");
                 endcheck = 1;
             }
             else if (checkSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
             {
+                play_timer.Stop(); // 타이머 멈춤
+                turn_txt.Text = fivestonemap[x, y] + " wins";
+                if (turn == true)
+                {
+                    turn_txt.ForeColor = Color.Black;
+                }
+                else
+                {
+                    turn_txt.ForeColor = Color.White;
+                }
                 MessageBox.Show(fivestonemap[x, y] + " wins");
                 endcheck = 1;
             }
             else if (checkBACKSLASH(x, y) >= 5 && fivestonemap[x, y] != STONE.none)
             {
+                play_timer.Stop(); // 타이머 멈춤
+                turn_txt.Text = fivestonemap[x, y] + " wins";
+                if (turn == true)
+                {
+                    turn_txt.ForeColor = Color.Black;
+                }
+                else
+                {
+                    turn_txt.ForeColor = Color.White;
+                }
                 MessageBox.Show(fivestonemap[x, y] + " wins");
                 endcheck = 1;
             }
