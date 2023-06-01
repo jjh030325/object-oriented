@@ -50,3 +50,4 @@ C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\Window
 C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.CoreCompileInputs.cache
 C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.aimtrainForm.resources
