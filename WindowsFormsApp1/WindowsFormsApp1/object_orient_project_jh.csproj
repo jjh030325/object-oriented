@@ -72,6 +72,9 @@
     <Compile Include="rucktestForm.Designer.cs">
       <DependentUpon>rucktestForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aimtrainForm.resx">
+      <DependentUpon>aimtrainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fivestoneForm.resx">
       <DependentUpon>fivestoneForm.cs</DependentUpon>
     </EmbeddedResource>

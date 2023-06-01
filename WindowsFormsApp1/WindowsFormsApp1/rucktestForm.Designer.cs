@@ -40,6 +40,7 @@
             // 
             // title
             // 
+            this.title.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("배달의민족 주아", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.title.ForeColor = System.Drawing.Color.White;
@@ -52,6 +53,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("배달의민족 주아", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.Location = new System.Drawing.Point(156, 450);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
@@ -64,6 +66,7 @@
             // 
             // probability
             // 
+            this.probability.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.probability.AutoSize = true;
             this.probability.Font = new System.Drawing.Font("국립공원 꼬미", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.probability.ForeColor = System.Drawing.Color.White;
@@ -77,6 +80,7 @@
             // 
             // normal_txt
             // 
+            this.normal_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.normal_txt.AutoSize = true;
             this.normal_txt.Font = new System.Drawing.Font("국립공원 꼬미", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.normal_txt.ForeColor = System.Drawing.Color.White;
@@ -89,6 +93,7 @@
             // 
             // rare_txt
             // 
+            this.rare_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.rare_txt.AutoSize = true;
             this.rare_txt.Font = new System.Drawing.Font("국립공원 꼬미", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rare_txt.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -101,6 +106,7 @@
             // 
             // epic_txt
             // 
+            this.epic_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.epic_txt.AutoSize = true;
             this.epic_txt.Font = new System.Drawing.Font("국립공원 꼬미", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.epic_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -113,6 +119,7 @@
             // 
             // unique_txt
             // 
+            this.unique_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.unique_txt.AutoSize = true;
             this.unique_txt.Font = new System.Drawing.Font("국립공원 꼬미", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.unique_txt.ForeColor = System.Drawing.Color.Yellow;
@@ -125,6 +132,7 @@
             // 
             // legend_txt
             // 
+            this.legend_txt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.legend_txt.AutoSize = true;
             this.legend_txt.Font = new System.Drawing.Font("국립공원 꼬미", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.legend_txt.ForeColor = System.Drawing.Color.Lime;

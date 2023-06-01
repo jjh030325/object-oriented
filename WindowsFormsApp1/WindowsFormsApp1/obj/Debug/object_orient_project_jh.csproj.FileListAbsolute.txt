@@ -36,3 +36,17 @@ C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsForms
 C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\user\Source\Repos\elecbug\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\wpqlk\OneDrive\바탕 화면\object_orient_project\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csprojAssemblyReference.cache
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.AssemblyReference.cache
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.SuggestedBindingRedirects.cache
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.aimtrainForm.resources
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.fivestoneForm.resources
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.rucktestForm.resources
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.GenerateResource.cache
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\object_orient_project_jh.csproj.CoreCompileInputs.cache
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\chlwn\OneDrive\바탕 화면\객체 프로잭트\object-oriented\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
