@@ -95,7 +95,7 @@ namespace WindowsFormsApp1
                 scoreLabel.Text = "Score : " + score.ToString();
                 shootcount_txt.Text = "Shootcount : " + shootcount.ToString();
                 accuracy = (double)score / shootcount * 100;
-                accuracy_txt.Text = "명중률 : " + accuracy.ToString("0.00") + " %";
+                accuracy_txt.Text = "Accuracy : " + accuracy.ToString("0.00") + " %";
                 if (startcheck == false)
                 {
                     startcheck = true;
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1
                     shootcount++;
                     shootcount_txt.Text = "Shootcount : " + shootcount.ToString();
                     accuracy = (double)score / shootcount * 100;
-                    accuracy_txt.Text = "명중률 : " + accuracy.ToString("0.00") + " %";
+                    accuracy_txt.Text = "Accuracy : " + accuracy.ToString("0.00") + " %";
                 }
             }
         }

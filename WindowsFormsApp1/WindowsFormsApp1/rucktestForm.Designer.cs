@@ -193,7 +193,6 @@
             this.Controls.Add(this.title);
             this.Name = "rucktestForm";
             this.Text = "rucktestForm";
-            this.Load += new System.EventHandler(this.rucktestForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fireworksPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fireworksPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fireworksPictureBox2)).EndInit();

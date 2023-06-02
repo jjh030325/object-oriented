@@ -95,9 +95,5 @@ namespace WindowsFormsApp1
             unique_txt.Text = "유니크 : " + unique;
             legend_txt.Text = "레전더리 : " + legend;
         }
-        private void rucktestForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
